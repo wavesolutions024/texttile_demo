@@ -6,20 +6,38 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import { useEffect } from "react";
 
 const Testimoneal = () => {
+     useEffect(() => {
+      AOS.init();
+    }, []);
   return (
     <>
       <div class="testimoneal_parent parent">
         <div class="testioneal_cont cont">
-          <span>
+          <span
+          
+            data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800"
+          >
             <GoThumbsup />
           </span>
-          <h3>Testimonial</h3>
-          <p className="para">
+          <h3
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          >Testimonial</h3>
+          <p className="para"
+            data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+          >
             Discover what our customers are saying about us. Real stories, real
             experiences – find out why they choose us.
           </p>
