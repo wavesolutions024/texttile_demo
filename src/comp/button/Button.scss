@@ -1,0 +1,40 @@
+.button {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+
+
+  .first_button {
+    padding: 14px 20px;
+    font-size: 18px;
+     transition: var(--trans);
+  }
+
+  .second_btn{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    background-color: black;
+    color: white !important;
+    transition: var(--trans);
+    width: 100%;
+
+
+  }
+
+  &:hover{
+
+    .first_button{
+        transform: translateY(5px);
+    }
+    .second_btn{
+        right: 0;
+    }
+  }
+}

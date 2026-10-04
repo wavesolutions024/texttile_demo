@@ -1,0 +1,43 @@
+.prd_list_parent{
+    padding: 80px 0px;
+
+    .mySwiper{
+        width: 100%;
+        height: 400px;
+
+        .swiper-slide{
+            .image{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../assets/prd_1.jpg");
+                padding: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                
+
+                .content{
+                    background-color: rgba(255, 255, 255, 0.383);
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--unit);
+                }
+
+                &.image2{
+                    background-image: url("../../assets/prd_2.jpg");
+                }
+                 &.image3{
+                    background-image: url("../../assets/prd_3.jpeg");
+                }
+                 &.image4{
+                    background-image: url("../../assets/prd_4.jpeg");
+                }
+
+                 &.image5{
+                    background-image: url("../../assets/prd_5.jpeg");
+                }
+            }
+        }
+    }
+}

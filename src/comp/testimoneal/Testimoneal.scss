@@ -1,0 +1,86 @@
+.testimoneal_parent{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(235, 235, 235);
+
+    .testioneal_cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--unit);
+        
+
+
+        span{
+            font-size: 80px;
+            color: var(--accent2);
+        }
+
+        h3{
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .para{
+            max-width: 50ch;
+            text-align: center;
+            line-height: 140%;
+        }
+
+        .testimoneal_list{
+            height: 200px;
+            width: 100%;
+
+
+            .mySwiper{
+                width: 100%;
+                height: 100%;
+
+                .swiper-button-next,.swiper-button-prev{
+                    border: 1px solid var(--accent2);
+                    padding: 10px;
+                    
+
+                    svg{
+                        path{
+                            fill: var(--accent2);
+                        }
+                    }
+                }
+
+                .swiper-slide{
+                    width: 100%;
+                    height: 100%;
+
+                    .content{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: var(--unit);
+                        padding: 0px 80px;
+
+                        p{
+                            max-width: 80ch;
+                            text-align: center;
+                            line-height: 140%;
+                        }
+
+                        .name{
+
+                            p{
+                                font-weight: 600;
+                            }
+                            .place{
+                                color: var(--accent2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
